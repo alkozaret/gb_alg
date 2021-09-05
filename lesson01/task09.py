@@ -24,4 +24,7 @@ num_list = []
 for i in [a, b, c]:
     num_list.append(check(i))
 
-print(num_list)
+num_list.remove(max(num_list))
+num_list.remove(min(num_list))
+
+print(f'средное число {num_list[0]}')
